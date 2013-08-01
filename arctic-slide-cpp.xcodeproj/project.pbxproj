@@ -1,0 +1,221 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DAEBB6FA17AAE14600217992 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DAEBB6F917AAE14600217992 /* main.cpp */; };
+		DAEBB6FC17AAE14600217992 /* arctic_slide_cpp.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = DAEBB6FB17AAE14600217992 /* arctic_slide_cpp.1 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DAEBB6F417AAE14600217992 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				DAEBB6FC17AAE14600217992 /* arctic_slide_cpp.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DAEBB6F617AAE14600217992 /* arctic-slide-cpp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "arctic-slide-cpp"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAEBB6F917AAE14600217992 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		DAEBB6FB17AAE14600217992 /* arctic_slide_cpp.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = arctic_slide_cpp.1; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DAEBB6F317AAE14600217992 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DAEBB6ED17AAE14600217992 = {
+			isa = PBXGroup;
+			children = (
+				DAEBB6F817AAE14600217992 /* arctic-slide-cpp */,
+				DAEBB6F717AAE14600217992 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DAEBB6F717AAE14600217992 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DAEBB6F617AAE14600217992 /* arctic-slide-cpp */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DAEBB6F817AAE14600217992 /* arctic-slide-cpp */ = {
+			isa = PBXGroup;
+			children = (
+				DAEBB6F917AAE14600217992 /* main.cpp */,
+				DAEBB6FB17AAE14600217992 /* arctic_slide_cpp.1 */,
+			);
+			path = "arctic-slide-cpp";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DAEBB6F517AAE14600217992 /* arctic-slide-cpp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAEBB6FF17AAE14600217992 /* Build configuration list for PBXNativeTarget "arctic-slide-cpp" */;
+			buildPhases = (
+				DAEBB6F217AAE14600217992 /* Sources */,
+				DAEBB6F317AAE14600217992 /* Frameworks */,
+				DAEBB6F417AAE14600217992 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "arctic-slide-cpp";
+			productName = "arctic-slide-cpp";
+			productReference = DAEBB6F617AAE14600217992 /* arctic-slide-cpp */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DAEBB6EE17AAE14600217992 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Paul R. Potts";
+			};
+			buildConfigurationList = DAEBB6F117AAE14600217992 /* Build configuration list for PBXProject "arctic-slide-cpp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DAEBB6ED17AAE14600217992;
+			productRefGroup = DAEBB6F717AAE14600217992 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DAEBB6F517AAE14600217992 /* arctic-slide-cpp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DAEBB6F217AAE14600217992 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAEBB6FA17AAE14600217992 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		DAEBB6FD17AAE14600217992 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		DAEBB6FE17AAE14600217992 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		DAEBB70017AAE14600217992 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DAEBB70117AAE14600217992 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DAEBB6F117AAE14600217992 /* Build configuration list for PBXProject "arctic-slide-cpp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAEBB6FD17AAE14600217992 /* Debug */,
+				DAEBB6FE17AAE14600217992 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAEBB6FF17AAE14600217992 /* Build configuration list for PBXNativeTarget "arctic-slide-cpp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAEBB70017AAE14600217992 /* Debug */,
+				DAEBB70117AAE14600217992 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DAEBB6EE17AAE14600217992 /* Project object */;
+}
