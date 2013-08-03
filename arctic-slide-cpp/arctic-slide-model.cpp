@@ -4,6 +4,10 @@
 //
 //  Created by Paul R. Potts on 8/1/13.
 
+// #include "Arduino.h"
+#include <cstring>
+#include <cstdio>
+
 #include "arctic-slide-model.h"
 #include "polar-boards.h"
 
@@ -432,7 +436,7 @@ void ArcticSlideModel_c::penguinMoveNTimes( u8_t n, dir_e dir )
     }
 }
 
-std::string ArcticSlideModel_c::description()
+void ArcticSlideModel_c::description()
 {
     static const char *empty_str_p = "____";
     static const char *tree_str_p = "tre ";
@@ -442,9 +446,13 @@ std::string ArcticSlideModel_c::description()
     static const char *heart_str_p = "hea ";
     static const char *bomb_str_p = "bom ";
     static const char *unknown_str_p = "??? ";
-    
-    std::string desc_str;
-    desc_str += "ArcticSlideModel board state:\n";
+
+    char row_desc_str[ POLAR_DATA_LEN_X * 4 + 1 ] = { 0 };
+    char *row_desc_str_p = row_desc_str;
+
+    printf( "Board state:\n" );
+    // Serial.println( "board state:" );
+
     for ( u8_t idx_y = 0; idx_y < POLAR_DATA_LEN_Y; idx_y++ )
     {
         for ( u8_t idx_x = 0; idx_x < POLAR_DATA_LEN_X; idx_x++ )
@@ -476,9 +484,11 @@ std::string ArcticSlideModel_c::description()
                 default:
                     break;
             }
-            desc_str += tile_str_p;
+            (void)strcat( row_desc_str_p, tile_str_p );
         }
-        desc_str += "\n";
+
+        printf( "%s\n", row_desc_str );
+        // Serial.println( row_desc_str );
+        *row_desc_str = '\0';
     }
-    return desc_str;
 }

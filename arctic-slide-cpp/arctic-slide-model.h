@@ -4,14 +4,10 @@
 //
 //  Created by Paul R. Potts on 8/1/13.
 
-// N.B.: here and there we use unsigned char as a generic short integer
-
 #ifndef __arctic_slide_cpp__arctic_slide_model__
 #define __arctic_slide_cpp__arctic_slide_model__
 
 #include "polar-boards.h"
-
-#include <string>
 
 typedef struct {
     u8_t y_idx;
@@ -25,7 +21,7 @@ typedef enum {
     dir_north
 } dir_e;
 
-// Plain old C helper functions
+// Plain C helper functions
 pos_t getAdjacentPos( pos_t original_pos, dir_e dir );
 unsigned char posValid( pos_t pos );
 const char *dirToString( dir_e dir );
@@ -69,7 +65,7 @@ public:
     void penguinMoveDue( dir_e dir );
     void penguinMoveNTimes( u8_t n, dir_e dir );
 
-    std::string description();
+    void description();
 };
 
 #endif /* defined(__arctic_slide_cpp__arctic_slide_model__) */
